@@ -1,10 +1,23 @@
 {
- "signatures": [],
+ "signatures": [
+  {
+   "keyid": "762cb22caca65de5e9b7b6baecb84ca989d337280ce6914b6440aea95769ad93",
+   "sig": ""
+  }
+ ],
  "signed": {
   "_type": "root",
   "consistent_snapshot": true,
-  "expires": "2024-06-05T14:04:01Z",
+  "expires": "2024-06-05T14:20:13Z",
   "keys": {
+   "762cb22caca65de5e9b7b6baecb84ca989d337280ce6914b6440aea95769ad93": {
+    "keytype": "ecdsa",
+    "keyval": {
+     "public": "-----BEGIN PUBLIC KEY-----\nMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEohqIdE+yTl4OxpX8ZxNUPrg3SL9H\nBDnhZuceKkxy2oMhUOxhWweZeG3bfM1T4ZLnJimC6CAYVU5+F5jZCoftRw==\n-----END PUBLIC KEY-----\n"
+    },
+    "scheme": "ecdsa-sha2-nistp256",
+    "x-playground-keyowner": "@jku"
+   },
    "abcd": {
     "keytype": "sigstore-oidc",
     "keyval": {
@@ -26,7 +39,9 @@
   },
   "roles": {
    "root": {
-    "keyids": [],
+    "keyids": [
+     "762cb22caca65de5e9b7b6baecb84ca989d337280ce6914b6440aea95769ad93"
+    ],
     "threshold": 1
    },
    "snapshot": {
@@ -39,7 +54,9 @@
     "x-playground-signing-period": 60
    },
    "targets": {
-    "keyids": [],
+    "keyids": [
+     "762cb22caca65de5e9b7b6baecb84ca989d337280ce6914b6440aea95769ad93"
+    ],
     "threshold": 1
    },
    "timestamp": {
