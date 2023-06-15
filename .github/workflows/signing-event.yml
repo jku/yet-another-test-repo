@@ -17,4 +17,4 @@ jobs:
       issues: write
     steps:
       - name: Signing event
-        uses: jku/repository-playground/playground/actions/signing-event@main
+        uses: jku/repository-playground/playground/actions/signing-event@sigstore-version-tweak
