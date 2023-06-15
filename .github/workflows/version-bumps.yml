@@ -17,7 +17,7 @@ jobs:
       generated: ${{ steps.online-bump.outputs.generated }}
     steps:
       - id: online-bump
-        uses: jku/repository-playground/playground/actions/online-version-bump@main
+        uses: jku/repository-playground/playground/actions/online-version-bump@sigstore-version-tweak
         with:
           gcp_workload_identity_provider: ${{ vars.GCP_WORKLOAD_IDENTITY_PROVIDER }}
           gcp_service_account: ${{ vars.GCP_SERVICE_ACCOUNT }}
@@ -29,7 +29,7 @@ jobs:
       actions: 'write' # for dispatching signing event workflow
     steps:
       - name: Create signing events for offline version bumps
-        uses: jku/repository-playground/playground/actions/offline-version-bump@main
+        uses: jku/repository-playground/playground/actions/offline-version-bump@sigstore-version-tweak
 
   deploy:
     permissions:
