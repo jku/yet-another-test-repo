@@ -6,13 +6,13 @@
   },
   {
    "keyid": "f3a803b94ea05cfd35bc8dd8c631d3b9daf1e490e18aa9c7d793d49eb5195801",
-   "sig": "304402204e4c4aa72470cb40ee2192e9d8d06d0033d209434dc2b38fd6ac73a525b45413022078bd982d22259ccf3a32fc0a62375e740153ff7d325c0781f26e8cbceda3ba61"
+   "sig": ""
   }
  ],
  "signed": {
   "_type": "root",
   "consistent_snapshot": true,
-  "expires": "2024-06-18T10:41:41Z",
+  "expires": "2024-06-18T12:22:43Z",
   "keys": {
    "762cb22caca65de5e9b7b6baecb84ca989d337280ce6914b6440aea95769ad93": {
     "keytype": "ecdsa",
@@ -68,7 +68,8 @@
    },
    "targets": {
     "keyids": [
-     "762cb22caca65de5e9b7b6baecb84ca989d337280ce6914b6440aea95769ad93"
+     "762cb22caca65de5e9b7b6baecb84ca989d337280ce6914b6440aea95769ad93",
+     "f3a803b94ea05cfd35bc8dd8c631d3b9daf1e490e18aa9c7d793d49eb5195801"
     ],
     "threshold": 1
    },
