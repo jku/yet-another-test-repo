@@ -24,7 +24,7 @@ jobs:
           metadata_path: metadata
           targets_path: targets
 
-offline-version-bump:
+  offline-version-bump:
     runs-on: ubuntu-latest
     permissions:
       contents: 'write' # for committing to signing event branch
