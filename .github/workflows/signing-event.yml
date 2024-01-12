@@ -1,20 +1,24 @@
-name: Signing event
+name: TUF-on-CI signing event
 
 permissions: {}
 
 on:
   workflow_dispatch:
   push:
-    branches:
-      - 'sign/**'
+    branches: ['sign/**']
+    paths: ['metadata/**', 'targets/**']
 
 jobs:
   handle-signing-event:
-    name: Playground signing event
+    name: TUF-on-CI signing event
     runs-on: ubuntu-latest
     permissions:
-      contents: write # for adding targets changes
+      contents: write # for adding targets changes into the signing event branch
       issues: write
+      actions: write # for dispatching another signing-event workflow
+
     steps:
       - name: Signing event
-        uses: jku/repository-playground/playground/actions/signing-event@sigstore-version-tweak
+        uses: theupdateframework/tuf-on-ci/actions/signing-event@signoff-commits
+        with:
+          token: ${{ secrets.TUF_ON_CI_TOKEN || secrets.GITHUB_TOKEN }}
